@@ -11,45 +11,44 @@
     </header>
     <section>
         <form action="" method="get">
-          <!--  <fieldset>
-
-
-                DADOS PESSOAIS
-
+          <fieldset>
             <legend>Dados Pessoais</legend>
-            <label for="userName">Nome</label>
-            <input type="text" name="userName" required>
+            <label for="name">Nome</label>
+            <input id="name" type="text" name="userName" required>
             <br>
-            <label for="userAge">Idade</label>
-            <input type="number" name="userAge" min="12" max="100" required>
+            <label for="age">Idade</label>
+            <input id="age" type="number" name="userAge" min="12" max="100" required>
             <br>
             <label for="birthDate">Data de nascimento</label>
-            <input type="date" name="birthDate">
+            <input id="birthDate" type="date" name="birthDate">
             <br>
-            <label for="userEmail">Email</label>
-            <input type="email" name="userEmail" required>
+            <label for="email">Email</label>
+            <input id="email" type="email" name="userEmail" required>
             <br>
-            <label for="userPhoneNumber">Telefone</label>
-            <input type="tel" name="userPhoneNumber" pattern="[0-9]{0-11}" placeholder="DDD+ número">
+            <label for="phoneNumber">Telefone</label>
+            <input id="phoneNumber" type="tel" name="userPhoneNumber" pattern="[0-9]{0-11}" placeholder="DDD+ número">
             <br>
-            <label for="userImage">Upload de foto</label>
-            <input type="file" accept="image/*" name="userImage">
+            <label for="image">Upload de foto</label>
+            <input id="image" type="file" accept="image/*" name="userImage">
             
-            </fieldset> -->
+            </fieldset> 
 
             <fieldset>
                 <legend>Perfil</legend>
 
                 <p>Gênero:</p>
-                <input type="radio" name="userGender" value="Feminino">
-                <label for="userGender">Feminino</label>
-                <input type="radio" name="userGender" value="Masculino">
-                <label for="userGender">Masculino</label>
-                <input type="radio" name="userGender" value="notInformed">
-                <label for="userGender">Prefiro não informar</label>
+                <input id="fem" type="radio" name="userGender" value="Feminino">
+                <label for="fem">Feminino</label>
+
+                <input id="masc" type="radio" name="userGender" value="Masculino">
+                <label for="masc">Masculino</label>
+
+                <input id="notInformed" type="radio" name="userGender" value="notInformed">
+                <label for="notInformed">Prefiro não informar</label>
                 <br>
+
                 <label for="maritalStatus">Estado civil:</label>
-                <select name="maritalStatus">
+                <select id="maritalStatus" name="maritalStatus">
                     <option value="notInformed">Selecione...</option>
                     <option value="casado">Casado</option>
                     <option value="solteiro">Solteiro</option>
@@ -57,41 +56,101 @@
                     <option value="casado">União estável</option>
                 </select>
                 
-                <label for="userStates">Estado:</label>
-                 <select name="userStates">
-                    <option value="Acre"> Acre </option>
-                    <option value="Alagoas"> Alagoas </option>
-                    <option value="Amapá"> Amapá </option>
-                    <option value="Amazonas"> Amazonas  </option>
-                    <option value="Bahia"> Bahia </option>
-                    <option value="Ceará"> Ceará </option>
-                    <option value="Distrito Federal"> Distrito Federal </option>
-                    <option value="Espirito Santo"> Espirito Santo </option>
-                    <option value="Goiás"> Goiás </option>
-                    <option value="Maranhão"> Maranhão </option>
-                    <option value="Mato Grosso do Sul"> Mato Grosso do Sul </option>
-                    <option value="Mato Grosso"> Mato Grosso </option>
-                    <option value="Pará"> Minas Gerais </option>
-                    <option value=""> Pará </option>
-                    <option value="Paraíba"> Paraíba </option>
-                    <option value="Paraná"> Paraná </option>
-                    <option value="Pernambuco"> Pernambuco </option>
-                    <option value="Piauí"> Piauí </option>
-                    <option value="Rio de Janeiro"> Rio de Janeiro </option>
-                    <option value="Rio Grande do Norte"> Rio Grande do Norte </option>
-                    <option value="Rio Grande do Sul"> Rio Grande do Sul </option>
-                    <option value="Rondônia"> Rondônia </option>
-                    <option value="Roraima"> Roraima </option>
-                    <option value="Santa Catarina"> Santa Catarina </option>
-                    <option value="São Paulo">São Paulo</option>
-                    <option value="Sergipe"> Sergipe </option>
-                    <option value="Tocantins"> Tocantins </option>
-
+                <label for="state">Estado:</label>
+                 <select id="state" name="userStates" required>
+                    <option value="acre"> Acre </option>
+                    <option value="alagoas"> Alagoas </option>
+                    <option value="amapa"> Amapá </option>
+                    <option value="amazonas"> Amazonas  </option>
+                    <option value="bahia"> Bahia </option>
+                    <option value="ceara"> Ceará </option>
+                    <option value="distritoFederal"> Distrito Federal </option>
+                    <option value="espiritoSanto"> Espirito Santo </option>
+                    <option value="goias"> Goiás </option>
+                    <option value="maranhao"> Maranhão </option>
+                    <option value="matoGrossoDoSul"> Mato Grosso do Sul </option>
+                    <option value="matoGrosso"> Mato Grosso </option>
+                    <option value="minasGerais"> Minas Gerais </option>
+                    <option value="para"> Pará </option>
+                    <option value="paraiba"> Paraíba </option>
+                    <option value="parana"> Paraná </option>
+                    <option value="pernambuco"> Pernambuco </option>
+                    <option value="piaui"> Piauí </option>
+                    <option value="rioDeJaneiro"> Rio de Janeiro </option>
+                    <option value="rioGrandeDoNorte"> Rio Grande do Norte </option>
+                    <option value="rioGrandeDoSul"> Rio Grande do Sul </option>
+                    <option value="rondonia"> Rondônia </option>
+                    <option value="roraima"> Roraima </option>
+                    <option value="santaCatarina"> Santa Catarina </option>
+                    <option value="saoPaulo">São Paulo</option>
+                    <option value="sergipe"> Sergipe </option>
+                    <option value="tocantins"> Tocantins </option>
                 </select>
+
+                <label for="city">Cidade</label>
+                <input id="city" type="text" name="userCity">
+            </fieldset>
+
+            <fieldset>
+                <legend>Hábitos</legend>
+                <p>Redes Sociais:</p>
+
+                <input id="instagram" type="checkbox" name="social" value="instagram">
+                <label for="instagram">Instagram</label>
+                <br>
+
+                <input id="facebook" type="checkbox" name="social" value="facebook">
+                <label for="facebook">Facebook</label>
+                <br>
+
+                <input id="linkedin" type="checkbox" name="social" value="linkedin">
+                <label for="linkedin">Linkedin</label>
+                <br>
+
+                <input id="X" type="checkbox" name="social" value="X">
+                <label for="X">X</label>
+                <br>
+
+                <label for="musciStyle">Estilo musical:</label>
+                <input list="styleTypes" id="musciStyle" name="musciStyle" type="text">
+                <datalist id="styleTypes">
+                    <option value="Rock">
+                    <option value="Gospel">
+                    <option value="Reggae">
+                    <option value="Sertanejo">
+                </datalist>
+                <br>
+
+                <label for="favoriteColor">Cor favorita:</label>
+                <input type="color" name="userFvoriteColor" id="favoriteColor">
+            </fieldset>
+
+            <fieldset>
+                <legend>Opnião</legend>
+                <p>O que você acha da qualidade do nosso serviço?</p>
+                <input id="excellent" type="radio" name="userSatisfaction" value="otima">
+                <label for="excellent">Ótima</label>
+                <br>
+                <input id="good" type="radio" name="userSatisfaction" value="boa">
+                <label for="good">Boa</label>
+                <br>
+                <input id="regular" type="radio" name="userSatisfaction" value="regular">
+                <label for="regular">Regular</label>
+                <br>
+                <input id="bad" type="radio" name="userSatisfaction" value="ruim">
+                <label for="bad">Ruim</label> 
+                <br>
+                <br>
                 
+                <label for="comment">Deixe seu comentário:</label> 
+                <textarea id="comment" name="userComment" placeholder="Digite aqui..." ></textarea>
+
+                
+
             </fieldset>
 
             <button type="submit">Enviar</button>
+            
         </form>
     </section>
 </body>
