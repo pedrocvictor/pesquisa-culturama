@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+body {
+    background-color: #F0EBF8;
+    font-family: "Work sans", sans-serif;
+
+}
+
+main {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+}
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+img {
+    width: 100px;
+}
+
+h1 {
+    font-family: "Fjalla One", sans-serif;
+    text-align: center;
+}
+ 
+form {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 100px;
+
+}
+
+fieldset {
+    padding: 15px;
+    border: 1px solid #cccccc;/* Definindo a borda*/
+    border-radius: 5px;
+    margin-bottom: 15px;/* Espaçamento dos quadrados */
+
+}
+
+legend {
+    font-weight: bold; /* Deixando o texto em negrito */
+    font-size: 18px;
+    padding: 0 5px;/* Espaçamento horizontal */
+}
+
+label {
+    display: inline-block; /* Permite definir largura e altura */
+    margin-bottom: 5px;
+}
+
+
+p {
+    margin-bottom: 15px; /* Espaçamento entre parágrafos */
+    font-weight: bold;/* Deixando o texto em negrito */
+}
+
+input, select, textarea { 
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    
+} 
+
+textarea {
+    min-height: 100px; /* Altura mínima para o campo de texto */
+    cursor: pointer;
+}
+
+input[type="tel"],
+ input[type="file"] {
+    margin-bottom: 0;
+}
+
+small {
+    display: inline-block;/* Permite definir margem */
+    margin-bottom: 20px;/* Espaçamento abaixo do texto */
+}
+
+input[type="radio"], 
+input[type="checkbox"] {
+    width: auto; /* Ajusta a largura para o tamanho padrão */
+}
+
+input[type="color"] {
+   width: 40px;
+   padding: 0 5px; 
+} /* Ajusta a largura para o seletor de cor */
+
+input:invalid, 
+select:invalid, 
+textarea:invalid {
+  border-color: red;
+}
+
+input:valid, 
+select:valid, 
+textarea:valid {
+  border-color: green;
+}
+
+button {
+  width: 100px;
+  height: 30px;
+  margin-right: 10px;
+  background-color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: green; /* Para o botão de Enviar */
+  color: white;
+}
+
+button[type="reset"]:hover {
+  background-color: orangered; /* Para o botão de Limpar */
+  color: white;
+}

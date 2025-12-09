@@ -3,14 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/culturama-favico.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Work+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
 <body>
-    <header>
-        <h1>Pesquisa Online</h1>
+    <main><header>
+        <img src="img/logo-culturama.png" alt="logo- culturama">
+        <h1>Formulário
     </header>
     <section>
-        <form action="" method="get">
+        <form action="sucesso.html" method="get">
           <fieldset>
             <legend>Dados Pessoais</legend>
             <label for="name">Nome</label>
@@ -26,10 +32,12 @@
             <input id="email" type="email" name="userEmail" required>
             <br>
             <label for="phoneNumber">Telefone</label>
-            <input id="phoneNumber" type="tel" name="userPhoneNumber" pattern="[0-9]{0-11}" placeholder="DDD+ número">
+            <input id="phoneNumber" type="tel" name="userPhoneNumber" pattern="[0-9]{0-11}" placeholder="DDD + número sem sem espaços ou hífen." aria-describedby="phoneHelp">
+            <small id="phoneHelp">Preencha com 11 dígitos no formato: DDD + número sem espaços ou hífen.</small>
             <br>
             <label for="image">Upload de foto</label>
-            <input id="image" type="file" accept="image/*" name="userImage">
+            <input id="image" type="file" accept="image/*" name="userImage" aria-describedby="imageHelp">
+            <small id="imageHelp">Envie uma foto no formato PNG ou JPEG</small>
             
             </fieldset> 
 
@@ -158,11 +166,12 @@
 
             </fieldset>
 
-            <button type="submit">Enviar</button>
-            <button type="reset">Limpar Formulário</button>
+            <button type="submit" aria-label="Enviar dados do Formulário">Enviar</button>
+            <button type="reset" aria-label="Limpar dados do Formulário">Limpar </button>
 
             
         </form>
-    </section>
+    </section></main>
+    
 </body>
 </html>
