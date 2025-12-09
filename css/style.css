@@ -48,3 +48,30 @@ legend {
     font-size: 18px;
     padding: 0 5px;/* Espaçamento horizontal */
 }
+
+label {
+    display: inline-block; /* Permite definir largura e altura */
+    margin-bottom: 5px;
+}
+
+input, select, textarea { 
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    
+} 
+
+textarea {
+    min-height: 100px; /* Altura mínima para o campo de texto */
+}
+
+input[type="radio"], input[type="checkbox"] {
+    width: auto; /* Ajusta a largura para o tamanho padrão */
+}
+
+input[type="color"] {
+   width: 40px;
+   padding: 0 5px; 
+} /* Ajusta a largura para o seletor de cor */
